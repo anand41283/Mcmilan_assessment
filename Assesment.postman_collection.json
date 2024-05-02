@@ -1,0 +1,527 @@
+{
+	"info": {
+		"_postman_id": "2c73fc16-ef6c-4f59-8bd6-ed88d8229519",
+		"name": "Assesment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34625271"
+	},
+	"item": [
+		{
+			"name": "Dept add",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE0NTUyNjI1LCJpYXQiOjE3MTQ1NTE3MjUsImp0aSI6ImMxZWVkNDIyNzQyYjRjNTViZGU1ZjE3M2QwMzJjZTA4IiwidXNlcl9pZCI6MX0.q8gBUPAB8orv01VVf5QpGwbRtvMzwjYjn5gD1kvFhho",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "badu",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "Badu@123",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "email",
+							"value": "badu@gmail.com",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "department",
+							"value": "B tech",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/Add/dept/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"Add",
+						"dept",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "logout",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE0NTUzNjk2LCJpYXQiOjE3MTQ1NTI3OTYsImp0aSI6ImM0NmI1NTI4ZDA0ZjRiMmI5YTI3M2JkNWUwODcyY2Y2IiwidXNlcl9pZCI6MX0.FTaGZQLBwGh4Hj8t2Q9cSt6_lw5LI2aNN29KbETd0TA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/logout/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"logout",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE0NTUzNjk2LCJpYXQiOjE3MTQ1NTI3OTYsImp0aSI6ImM0NmI1NTI4ZDA0ZjRiMmI5YTI3M2JkNWUwODcyY2Y2IiwidXNlcl9pZCI6MX0.FTaGZQLBwGh4Hj8t2Q9cSt6_lw5LI2aNN29KbETd0TA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "sukumar",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "suku@123",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "suku@gmail.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/super/register/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"super",
+						"register",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE0NTU0NTYyLCJpYXQiOjE3MTQ1NTM2NjIsImp0aSI6ImZlZWZlNDRmYjYwZDQxZTliY2U3ZGY0ZWEyZmI4OGZmIiwidXNlcl9pZCI6Mn0.JHNchiBin5PTIPtv0koKsgSriHI_CSLIcrOSLpF430Q",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "sukumar",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "suku@123",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "suku@gmail.com",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/login/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"login",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add student",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE0NTU0NTYyLCJpYXQiOjE3MTQ1NTM2NjIsImp0aSI6ImZlZWZlNDRmYjYwZDQxZTliY2U3ZGY0ZWEyZmI4OGZmIiwidXNlcl9pZCI6Mn0.JHNchiBin5PTIPtv0koKsgSriHI_CSLIcrOSLpF430Q",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "sukumar",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "suku@123",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "email",
+							"value": "suku@gmail.com",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "name",
+							"value": "Anjitha",
+							"type": "text"
+						},
+						{
+							"key": "reg_number",
+							"value": "103",
+							"type": "text"
+						},
+						{
+							"key": "phone_number",
+							"value": "1235456851",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "anji@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "depart",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/v2/student/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"v2",
+						"student",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "list student",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE0NTU0NTYyLCJpYXQiOjE3MTQ1NTM2NjIsImp0aSI6ImZlZWZlNDRmYjYwZDQxZTliY2U3ZGY0ZWEyZmI4OGZmIiwidXNlcl9pZCI6Mn0.JHNchiBin5PTIPtv0koKsgSriHI_CSLIcrOSLpF430Q",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "sukumar",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "suku@123",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "email",
+							"value": "suku@gmail.com",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "name",
+							"value": "Anjitha",
+							"type": "text"
+						},
+						{
+							"key": "reg_number",
+							"value": "103",
+							"type": "text"
+						},
+						{
+							"key": "phone_number",
+							"value": "1235456851",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "anji@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "depart",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/v2/student/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"v2",
+						"student",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get student",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE0NTU0NTYyLCJpYXQiOjE3MTQ1NTM2NjIsImp0aSI6ImZlZWZlNDRmYjYwZDQxZTliY2U3ZGY0ZWEyZmI4OGZmIiwidXNlcl9pZCI6Mn0.JHNchiBin5PTIPtv0koKsgSriHI_CSLIcrOSLpF430Q",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "sukumar",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "suku@123",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "email",
+							"value": "suku@gmail.com",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "name",
+							"value": "Anjitha",
+							"type": "text"
+						},
+						{
+							"key": "reg_number",
+							"value": "103",
+							"type": "text"
+						},
+						{
+							"key": "phone_number",
+							"value": "1235456851",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "anji@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "depart",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/v2/student/3/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"v2",
+						"student",
+						"3",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "student Update",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE0NTU0NTYyLCJpYXQiOjE3MTQ1NTM2NjIsImp0aSI6ImZlZWZlNDRmYjYwZDQxZTliY2U3ZGY0ZWEyZmI4OGZmIiwidXNlcl9pZCI6Mn0.JHNchiBin5PTIPtv0koKsgSriHI_CSLIcrOSLpF430Q",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 3,\r\n    \"name\": \"Anjitha tv\",\r\n    \"reg_number\": 103,\r\n    \"phone_number\": 1235456851,\r\n    \"email\": \"anji@gmail.com\",\r\n    \"depart\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/v2/student/3/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"v2",
+						"student",
+						"3",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "student delete",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE0NTU0NTYyLCJpYXQiOjE3MTQ1NTM2NjIsImp0aSI6ImZlZWZlNDRmYjYwZDQxZTliY2U3ZGY0ZWEyZmI4OGZmIiwidXNlcl9pZCI6Mn0.JHNchiBin5PTIPtv0koKsgSriHI_CSLIcrOSLpF430Q",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 3,\r\n    \"name\": \"Anjitha tv\",\r\n    \"reg_number\": 103,\r\n    \"phone_number\": 1235456851,\r\n    \"email\": \"anji@gmail.com\",\r\n    \"depart\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/v2/student/3/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"v2",
+						"student",
+						"3",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
